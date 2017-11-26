@@ -1,0 +1,6 @@
+compiledTests/*
+dist/*
+node_modules
+tests/* 
+production/*
+release/*

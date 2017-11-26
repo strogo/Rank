@@ -1,0 +1,378 @@
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(100,200,90,0.2);
+  }
+   
+  
+body::-webkit-scrollbar-thumb { 
+    background: rgba(113, 120, 120, 0.6);
+}
+ 
+leftPanel::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(100,200,90,0.2);
+}
+    
+  
+leftPanel::-webkit-scrollbar-thumb { 
+    background: rgba(113, 120, 120, 0.6);
+}
+
+
+.leftPanel{
+    width: 30%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    display: flex;  
+    flex-direction: column;
+    cursor: default;
+    background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; 
+    background-image: linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+}   
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+.centered{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row{
+    display:flex;
+    flex:1;
+    flex-direction:row;
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .fade {
+     -webkit-animation: flickerAnimation 5s infinite;
+     -moz-animation: flickerAnimation 5s infinite;
+     -o-animation: flickerAnimation 5s infinite;
+      animation: flickerAnimation 5s infinite;
+  }
+
+ 
+.popOver{ 
+    display: flex;
+    height:20%;
+    margin-top:56px; 
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #5aa;
+    background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; 
+    background-image: linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+}
+
+.chain{
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.times{
+    font-family: monospace;
+    font-size: xx-large;
+}
+ 
+.loading{
+    background: #667db6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.chain::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(100,200,90,0.2);
+} 
+  
+  
+.chain::-webkit-scrollbar-thumb { 
+    background: rgba(113, 120, 120, 0.6);
+}
+
+.popOver::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(100,200,90,0.2);
+} 
+  
+  
+.popOver::-webkit-scrollbar-thumb { 
+    background: rgba(113, 120, 120, 0.6);
+}
+
+.flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.drag{
+  -webkit-app-region: drag;
+   width: 98%;
+   height: 45px;
+   position: absolute;
+   top: 5px;
+   left: 5px;
+} 
+  
+.no-drag{
+  -webkit-app-region: no-drag;
+}
+
+
+
+
+.margin20{ 
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.container{
+    width:100%;
+    height:100%;
+    margin:0;
+}
+
+.title{  
+    font-family: Impact, "sans serif";
+    margin-left:30px;
+	font-size: 30px;
+    font-weight: 800;
+    cursor:pointer;
+    text-shadow: #000 0px 0px 2px;
+    color:rgb(52, 202, 192);
+    line-height: 26.4px; 
+    -webkit-app-region: no-drag;
+}   
+
+body{  
+    background-size: cover;
+    margin : 0;
+    overflow-x: hidden;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    text-align: center; 
+    -webkit-appearance: none;
+    margin: 0;
+}  
+
+
+/*
+input {
+    background-color:transparent;
+    border: 0px solid;
+    height:30px;
+    width:30px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input:focus {
+    outline:none;
+}
+*/ 
+
+#A{ 
+    background-image:url("A.svg");
+}
+#v{
+    background-image:url("v.svg");
+    background-size: 14px; 
+}
+#s{
+    background-image:url("s.svg");
+    background-size: 8px; 
+}
+#cos{
+    background-image:url("cos.svg");
+}
+#sin{
+    background-image:url("sin.svg");
+}
+#e{
+    background-image:url("e.svg");
+}
+#ln{
+    background-image:url("ln.svg");
+}
+#pi{
+    background-image:url("pi.svg");
+}
+#xn{
+    background-image:url("xn.svg");
+}
+#tan{
+    background-image:url("tan.svg"); 
+} 
+#sqrt{
+    background-image:url("sqrt.svg");
+}  
+#trash{ 
+    background-image:url("trash.svg");
+}
+ 
+ 
+.inputButton{
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-color: white;
+    background-position-x: center;
+    background-size: 18px;
+    border-radius: 50px; 
+    cursor: pointer;
+    box-shadow: 1px 1px 25px #888888;
+}
+
+
+.inputButton:hover{
+    transform:scale(1.2,1.2)
+}
+
+
+.inputButtonDisabled{
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-color: rgba(113, 120, 120, 0.6);
+    background-position-x: center;
+    background-size: 18px;
+    border-radius: 50px; 
+    cursor: no-drop;
+}
+ 
+.exponentButton{
+    cursor: pointer;
+    background-color: rgba(21,77,111,0.8);
+    color: white;
+    width: 20px;
+    box-shadow: 1px 1px 25px #888888;
+    height: 20px; 
+}
+
+.exponentButton:hover{
+    transform:scale(1.1,1.1) 
+} 
+ 
+.matrix {
+    position: relative;
+    margin-top:30px;
+    margin-right:30px;
+    margin-bottom:30px;
+}
+.matrix:before, .matrix:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 1px solid #000;
+    width: 6px;
+    height: 100%;
+}
+.matrix:before {
+    left: -6px;
+    border-right: 0px;
+}
+.matrix:after {
+    right: -6px; 
+    border-left: 0px;
+}
+.matrix td {
+    padding: 5px;    
+    text-align: center;
+}
+
+
+.inputButtonLeft{
+    width: 40px;
+    height: 40px;
+    color:white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #3C4341;
+    background-size: 18px;
+    border-radius: 60px; 
+    cursor: pointer;
+    box-shadow: 1px 1px 25px #BF7B7B;
+}  
+
+
+.inputButtonLeft:hover{
+    transform:scale(1.2,1.2)
+}
+ 
+  
+.inputButtonDisabledLeft{
+    width: 40px;
+    height: 40px; 
+    color:white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3C4341;
+    background-color: rgba(113, 120, 120, 0.6);
+    border-radius: 60px; 
+    cursor: pointer;
+}
+
+.noPadding{
+    -webkit-padding-start: 0px;
+}
+ 
+leftPanel::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(100,200,90,0.2);
+}
+    
+  
+leftPanel::-webkit-scrollbar-thumb { 
+    background: rgba(113, 120, 120, 0.6);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+}

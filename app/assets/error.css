@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Satisfy', serif;
+    src: url('/fonts/Satisfy-Regular.ttf');
+}  
+
+
+
+.spin{ 
+    transform:scale(3,3) 
+}
+
+.spinner{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.gradient{
+    background: -webkit-linear-gradient(top, rgba(181,189,200,1) 47%,rgba(181,189,200,1) 47%,rgba(40,52,59,1) 99%);
+}
+
+.close{
+    position:absolute;
+    right:20px; 
+    top:20px;
+}
+
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;  
+}
+
+imgcenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.elem{
+    clear:both; 
+    display:block;
+    width:50%;
+    word-wrap: break-word;
+    text-align:center;
+    font-family:'EB Garamond'; 
+    font-size:35;   
+} 
+
+.center{
+    text-align:center; 
+}
+
+.fit{
+    display:block; 
+    overflow:auto
+}
+
+.footer {
+   left: 0;
+   bottom: 0;  
+   height: 100px;
+   width: 100%;
+   margin-top:100px;  
+   text-align: center;
+}
+   
